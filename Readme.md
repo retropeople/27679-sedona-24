@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Коля Смужаница](https://up.htmlacademy.ru/htmlcss/24/user/27679).
-* Наставник: [Вадим Иванов] (https://htmlacademy.ru/profile/dynamitek).
+* Наставник: [Вадим Иванов](https://htmlacademy.ru/profile/dynamitek).
 
 ---
 
