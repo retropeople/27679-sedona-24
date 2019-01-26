@@ -5,8 +5,105 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+	<header class="main-header">
+		<nav class="main-navigation">
+			<ul class="site-navigation">
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="gallery.html">Фото и Видео</a></li>
+				<li><a class="main-header-logo"><img src="img/logo.svg" alt="Логотип города Седона"></a></li>
+				<li><a href="map.html">Карта штата</a></li>
+				<li><a href="hotels.html">Гостиницы</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+	
+		<h1 class="visually-hidden">Туристический городок Седона</h1>
+		
+		<section class="welcome">
+			<h2 class="visually-hidden">Добро пожаловать!</h2>
+			<img src="img/welcome.jpg" alt="Добро пожаловать в Седону">
+			<p><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
+			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+		</section>
+		
+		<div class="description">
+			<b>Настоящий городок</b>
+			<p>— №1 —</p>
+			<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+			<img src="img/description.jpg" alt="Настоящий городок номер 1">
+		</div>
+		
+		<section class="beautification">
+			<h2 class="visually-hidden">Городское благоустройство</h2>
+			<ul class="beautification-list">
+				<li class="beautification-item">
+					<h3>Жильё</h3>
+					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+				</li>
+				<li class="beautification-item">
+					<h3>Еда</h3>
+					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				</li>
+				<li class="beautification-item">
+					<h3>Сувениры</h3>
+					<p>Не только китайского, но и местного производства!</p>
+				</li>
+			</ul>
+		</section>
+		
+		<div class="sight">
+			<b>Там есть Мост дьявола</b>
+			<p>— №2 —</p>
+			<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+			<img src="img/sight.jpg" alt="Мост дьявола">
+		</div>
+		
+		<section class="features">
+			<h2 class="visually-hidden">Преимущества</h2>
+			<ul class="features-list">
+				<li class="feature-item">
+					<h3>Небольшая площадь</h3>
+					<p>— №3 —</p>
+					<p>Все достопримечательности находятся очень близко</p>
+				</li>
+				<li class="feature-item">
+					<h3>Красивая дорога</h3>
+					<p>— №4 —</p>
+					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</li>
+				<li class="feature-item">
+					<h3>Мало туристов</h3>
+					<p>— №5 —</p>
+					<p>Большинство едет в гранд каньон и толпится там</p>
+				</li>
+			</ul>
+		</section>
+		
+		<section class="booking">
+			<b>Заинтересовались?</b>
+			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<h2>Поиск гостиницы в седоне</h2>
+			<p>Дата заезда:</p>
+			<p>Дата выезда:</p>
+			<p>Взрослые:</p>
+			<p>Дети:</p>
+			<span class="button booking-button">Найти</span>
+		</section>
+		<!-- Здесь будет интерактивная карта -->
+	</main>
+	<footer class="main-footer">
+		<p class="footer-hashtag">#VISITSEDONA</p>
+		<div class="footer-social">
+			<ul>
+				<li class="social-button"><a href="#">VK</a></li>
+				<li class="social-button"><a href="#">Facebook</a></li>
+				<li class="social-button"><a href="#">YouTube</a></li>
+			</ul>
+		</div>
+		<div class="footer-copyright">
+			<a href="https://htmlacademy.ru"><img src="img/htmlacademy.jpg" alt="Website by HTML Academy"></a>
+		</div>
+	</footer>
   </body>
 </html>
