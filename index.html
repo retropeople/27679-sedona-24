@@ -79,38 +79,58 @@
 		</section>
 		
 		<section class="booking">
+			<h2 class="visually-hidden">Поиск гостиницы в седоне</h2>
 			<b>Заинтересовались?</b>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<h2>Поиск гостиницы в седоне</h2>
-			<p>Дата заезда:</p>
-			<img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
-			<p>Дата выезда:</p>
-			<img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
-			<p>Взрослые:</p>
-			<p>Дети:</p>
-			<span class="button booking-button">Найти</span>
+			<div class="booking">
+				<button class="hotel-search-button" type="button">Поиск гостиницы в седоне</button>
+				<form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+					<div class="booking-item">
+						<label for="booking-date-arrival">Дата заезда:</label>
+						<div class="input">
+							<input id="booking-date-arrival" type="date" name="arrival_date">
+							<button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
+						</div>
+					</div>
+					<div class="booking-item">
+						<label for="booking-date-departure">Дата выезда:</label>
+						<input id="booking-date-departure" type="date" name="departure_date">
+						<button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
+					</div>
+					<div class="booking-item">
+						<label for="booking-adults">Взрослые:</label>
+						<input id="booking-adults" type="number" name="adults" min="1" max="30">
+					</div>
+					<div class="booking-item">
+						<label for="booking-kids">Дети:</label>
+						<input id="booking-kids" type="number" name="kids" min="0" max="10">
+					</div>
+					<button class="booking-button" type="submit">Найти</button>
+				</form>
+			</div>
 		</section>
 		<!-- Здесь будет интерактивная карта -->
 	</main>
 	<footer class="main-footer">
-		<div class="footer-visit">
-			<p class="footer-hashtag">#VISITSEDONA</p>
+		<div class="footer-hashtag">
+			<p>#VISITSEDONA</p>
 		</div>
 		<div class="footer-social">
 			<ul class="footer-social-list">
-				<li class="social-button">
-					<a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a>
+				<li class="social-button-twitter">
+					<a href="#">Седона в Твиттере</a>
 				</li>
-				<li class="social-button">
-					<a href="#"><img src="img/facebook.svg" width="12" height="22" alt="Facebook"></a>
+				<li class="social-button-facebook">
+					<a href="#">Седона на Фейсбуке</a>
 				</li>
-				<li class="social-button">
-					<a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a>
+				<li class="social-button-youtube">
+					<a href="#">Седона на Ютубе</a>
 				</li>
 			</ul>
 		</div>
 		<div class="footer-copyright">
-			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy_logo.svg" width="115" height="41" alt="Website by HTML Academy"><span class="visually-hidden">Сделано в HTML Academy</span></a>
+			<span class="websiteby">website by</span>
+			<a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy</a>
 		</div>
 	</footer>
   </body>
