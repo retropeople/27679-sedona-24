@@ -3,32 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo"><img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона"></a>
 			<ul class="site-navigation">
-				<li><a href="info.html">Информация</a></li>
-				<li><a href="gallery.html">Фото и Видео</a></li>
-				<li><a href="map.html">Карта штата</a></li>
-				<li><a href="hotels.html">Гостиницы</a></li>
+				<li class="navigation-item"><a href="info.html">Информация</a></li>
+				<li class="navigation-item"><a href="gallery.html">Фото и Видео</a></li>
+				<li class="navigation-item"><a href="map.html">Карта штата</a></li>
+				<li class="navigation-item"><a href="hotels.html">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<h1 class="visually-hidden">Туристический городок Седона</h1>
 		<section class="welcome">
-			<p><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
-			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			<div class="welcome-bg"></div>
+			<div class="text-block">
+				<p><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			</div>
 		</section>
 		
 		<div class="city">
 			<div class="description">
-				<b>Настоящий городок</b>
+				<p><b>Настоящий городок</b></p>
 				<p>— №1 —</p>
 				<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 			</div>
+			<div class="city-img"></div>
 		</div>
 		
 		<section class="beautification">
@@ -51,10 +58,11 @@
 		
 		<div class="sight">
 			<div class="description">
-				<b>Там есть Мост дьявола</b>
+				<p><b>Там есть Мост дьявола</b></p>
 				<p>— №2 —</p>
 				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 			</div>
+			<div class="sight-img"></div>
 		</div>
 		
 		<section class="features">
@@ -80,30 +88,48 @@
 		
 		<section class="booking">
 			<h2 class="visually-hidden">Поиск гостиницы в седоне</h2>
-			<b>Заинтересовались?</b>
+			<p><b>Заинтересовались?</b></p>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<div class="booking">
+			<div class="hotels-search-form">
 				<button class="hotel-search-button" type="button">Поиск гостиницы в седоне</button>
 				<form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
 					<div class="booking-item">
 						<label for="booking-date-arrival">Дата заезда:</label>
 						<div class="input">
-							<input id="booking-date-arrival" type="date" name="arrival_date">
+							<input id="booking-date-arrival" type="text" name="arrival_date" value="24 Апреля 2017" readonly>
 							<button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
 						</div>
 					</div>
 					<div class="booking-item">
 						<label for="booking-date-departure">Дата выезда:</label>
-						<input id="booking-date-departure" type="date" name="departure_date">
+						<input id="booking-date-departure" type="text" name="departure_date" value="4 Июля 2017" readonly>
 						<button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
 					</div>
 					<div class="booking-item">
 						<label for="booking-adults">Взрослые:</label>
-						<input id="booking-adults" type="number" name="adults" min="1" max="30">
+						<div class="counter">
+						  <button class="counter-button" type="button">
+							-
+						  </button>
+						  <span class="counter-value">1</span>
+						  <input type="hidden" name="adults" value="1">
+						  <button class="counter-button" type="button">
+							+
+						  </button>
+						</div>
 					</div>
 					<div class="booking-item">
 						<label for="booking-kids">Дети:</label>
-						<input id="booking-kids" type="number" name="kids" min="0" max="10">
+						<div class="counter">
+						  <button class="counter-button" type="button">
+							-
+						  </button>
+						  <span class="counter-value">0</span>
+						  <input type="hidden" name="kids" value="0">
+						  <button class="counter-button" type="button">
+							+
+						  </button>
+						</div>
 					</div>
 					<button class="booking-button" type="submit">Найти</button>
 				</form>

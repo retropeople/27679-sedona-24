@@ -1,0 +1,289 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 1200px;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	
+	background-color: rgb(242, 242, 242);
+}
+
+a {
+	text-decoration: none;
+}
+
+.site-navigation {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	list-style: none;
+}
+
+.navigation-item {
+	color: rgb(118, 99, 87);
+}
+
+.site-navigation a {
+	color: rgb(0, 0, 0);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: rgb(129, 179, 210);
+}
+
+.site-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.welcome .welcome-bg {
+	width: 1200px;
+	height: 508px;
+	background-image: url("../img/polygon.svg"), url("../img/welcome.svg"), url("../img/background.jpg");
+	background-position: bottom center, 370px 76px, center -56px;
+	background-size: 100%, 459px 353px, 100%;
+	background-repeat: no-repeat;
+}
+
+.welcome p {
+	line-height: 26px;
+	text-align: center;
+	color: rgb(51, 51, 51);
+}
+
+.welcome b {
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+
+.welcome .text-block {
+	background-color: rgb(255, 255, 255);
+}
+
+.description {
+	width: 400px;
+	background-color: rgb(129, 179, 210);
+	color: rgb(255, 255, 255);
+}
+
+.description p {
+	text-align: center;
+}
+
+.description b {
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.city-img {
+	width: 800px;
+	height: 256px;
+	background-image: url(../img/city.jpg);
+}
+
+.beautification {
+	background-color: rgb(255, 255, 255);
+}
+
+.beautification-list {
+	list-style: none;
+	text-align: center;
+}
+
+.beautification-item h3{
+	font-size: 21px;
+	color: rgb(0, 0, 0);
+}
+
+.beautification-item p{
+	color: rgb(51, 51, 51);
+
+}
+
+.sight-img {
+	width: 800px;
+	height: 256px;
+	background-image: url(../img/sight.jpg);
+}
+
+.features {
+	background-color: rgb(238, 238, 238);
+}
+
+.features-list {
+	list-style: none;
+	text-align: center;
+}
+
+.feature-item h3{
+	font-size: 21px;
+	color: rgb(0, 0, 0);
+}
+
+.feature-item p{
+	color: rgb(51, 51, 51);
+}
+
+.booking {
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.booking p {
+	line-height: 24px;
+	color: rgb(51, 51, 51);
+}
+
+.booking b {
+	font-size: 30px;
+	line-height: 36px;
+	color: rgb(0, 0, 0);
+}
+
+.hotel-search-button {
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	color: #ffffff;
+	width: 568px;
+	height: 86px;
+	background-color: rgb(118, 99, 87);
+}
+
+.hotel-search-button:hover,
+.hotel-search-button:focus {
+	background-color: rgb(96, 78, 67);
+}
+
+.hotel-search-button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: rgb(80, 62, 51);
+}
+
+.booking-form {
+	display: none;
+}
+
+.main-footer {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer.footer-hotels {
+	background-color: rgb(255, 255, 255);
+}
+
+.footer-hashtag {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	text-align: center;
+}
+
+.footer-social {
+	text-align: center;
+}
+
+.footer-social-list {
+	list-style: none;
+}
+
+.footer-social-list a {
+	color: #000000;
+}
+
+.footer-copyright {
+	text-align: center;
+	line-height: 26px;
+}
+
+.footer-copyright a {
+	color: rgb(0, 0, 0);
+}
+
+.hotels {
+	background-color: rgb(255, 255, 255);
+}
+
+.hotels-list {
+	list-style: none;
+}
+
+.hotel h3 {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.hotel-name {
+	color: rgb(0, 0, 0);
+}
+
+.hotel-name:hover,
+.hotel-name:focus {
+	color: rgb(129, 179, 210);
+}
+
+.hotel-name:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.type,
+.price {
+	font: inherit;
+	color: rgb(51, 51, 51);
+}
+
+.button {
+	font: inherit;
+	text-align: center;
+	vertical-align: middle;
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+}
+
+.hotels-button-detail {
+	background-color: rgb(129, 179, 210);
+}
+
+.hotels-button-detail:hover,
+.hotels-button-detail:focus {
+	background-color: rgb(102, 158, 192);
+}
+
+.hotels-button-detail:active {
+	background-color: rgb(84, 150, 189);
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.hotels-button-booking {
+	background-color: rgb(118, 99, 87);
+}
+
+.hotels-button-booking:hover,
+.hotels-button-booking:focus {
+	background-color: rgb(96, 78, 67);
+}
+
+.hotels-button-booking:active {
+	background-color: rgb(80, 62, 51);
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.rating-value {
+	width: 110px;
+	font: inherit;
+	text-align: center;
+	vertical-align: middle;
+	color: rgb(102, 102, 102);
+	background-color: rgb(242, 242, 242);
+}
