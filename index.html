@@ -25,7 +25,7 @@
 		<section class="welcome">
 			<div class="welcome-bg"></div>
 			<div class="text-block">
-				<p class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+				<p class="title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 			</div>
 		</section>
@@ -34,7 +34,7 @@
 			<div class="description-text">
 				<p class="title">Настоящий<br> городок</p>
 				<p>— №1 —</p>
-				<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+				<p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
 			</div>
 			<div class="description-city-img"></div>
 		</div>
@@ -42,15 +42,18 @@
 		<section class="beautification">
 			<h2 class="visually-hidden">Городское благоустройство</h2>
 			<ul class="beautification-list">
-				<li class="beautification-item house">
+				<li class="beautification-item-house">
+					<img src="img/house.svg" width="75" height="72" alt="Иконка жилья">
 					<h3>Жильё</h3>
 					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 				</li>
-				<li class="beautification-item burger">
+				<li class="beautification-item-burger">
+					<img src="img/burger.svg" width="74" height="70" alt="Иконка еды">
 					<h3>Еда</h3>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</li>
-				<li class="beautification-item souvenirs">
+				<li class="beautification-item-souvenirs">
+					<img src="img/souvenirs.svg" width="64" height="76" alt="Иконка сувениров">
 					<h3>Сувениры</h3>
 					<p>Не только китайского, но и местного производства!</p>
 				</li>
@@ -59,10 +62,10 @@
 		
 		<div class="description">
 			<div class="description-sight-img"></div>
-			<div class="description-text block2">
+			<div class="description-text">
 				<p class="title">Там есть<br> Мост дьявола</p>
 				<p>— №2 —</p>
-				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				<p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
 			</div>
 		</div>
 		
@@ -103,8 +106,10 @@
 					</div>
 					<div class="booking-item">
 						<label for="booking-date-departure">Дата выезда:</label>
-						<input id="booking-date-departure" type="text" name="departure_date" value="4 Июля 2017" readonly>
-						<button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
+						<div class="input">
+							<input id="booking-date-departure" type="text" name="departure_date" value="4 Июля 2017" readonly>
+							<button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
+						</div>
 					</div>
 					<div class="booking-item">
 						<label>Взрослые:</label>
