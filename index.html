@@ -96,52 +96,49 @@
 			<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			<div class="hotels-search-form">
 				<button class="hotel-search-button" type="button">Поиск гостиницы в седоне</button>
-				<form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
-					<div class="booking-item">
-						<label for="booking-date-arrival">Дата заезда:</label>
-						<div class="input">
+					<form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+						<div class="booking-item">
+							<label for="booking-date-arrival">Дата заезда:</label>
 							<input id="booking-date-arrival" type="text" name="arrival_date" value="24 Апреля 2017" readonly>
-							<button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
+							<button class="calendar-button" type="button"></button>
 						</div>
-					</div>
-					<div class="booking-item">
-						<label for="booking-date-departure">Дата выезда:</label>
-						<div class="input">
-							<input id="booking-date-departure" type="text" name="departure_date" value="4 Июля 2017" readonly>
-							<button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
+						<div class="booking-item">
+							<label for="booking-date-departure">Дата выезда:</label>
+								<input id="booking-date-departure" type="text" name="departure_date" value="4 Июля 2017" readonly>
+								<button class="calendar-button" type="button"></button>
 						</div>
-					</div>
-					<div class="booking-item">
-						<label>Взрослые:</label>
-						<div class="counter">
-						  <button class="counter-button" type="button">
-							-
-						  </button>
-						  <span class="counter-value">1</span>
-						  <input type="hidden" name="adults" id="adults" value="1">
-						  <button class="counter-button" type="button">
-							+
-						  </button>
+						<div class="booking-counter-row">
+							<div class="booking-item">
+								<label>Взрослые:</label>
+								<div class="counter">
+								  <button class="counter-button counter-minus" type="button">
+									−
+								  </button>
+								  <span class="counter-value">2</span>
+								  <input type="hidden" name="adults" id="adults" value="2">
+								  <button class="counter-button counter-plus" type="button">
+									+
+								  </button>
+								</div>
+							</div>
+							<div class="booking-item">
+								<label class="kids">Дети:</label>
+								<div class="counter">
+								  <button class="counter-button counter-minus" type="button">
+									−
+								  </button>
+								  <span class="counter-value">0</span>
+								  <input type="hidden" name="kids" id="kids" value="0">
+								  <button class="counter-button counter-plus" type="button">
+									+
+								  </button>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="booking-item">
-						<label>Дети:</label>
-						<div class="counter">
-						  <button class="counter-button" type="button">
-							-
-						  </button>
-						  <span class="counter-value">0</span>
-						  <input type="hidden" name="kids" id="kids" value="0">
-						  <button class="counter-button" type="button">
-							+
-						  </button>
-						</div>
-					</div>
-					<button class="booking-button" type="submit">Найти</button>
-				</form>
+						<button class="booking-button" type="submit">Найти</button>
+					</form>
 			</div>
 		</section>
-		<!-- Здесь будет интерактивная карта -->
 	</main>
 	<footer class="main-footer">
 		<div class="footer-item footer-hashtag">
