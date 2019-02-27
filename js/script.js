@@ -1,8 +1,7 @@
-var button = document.querySelector(".hotels-search-toggler");
-var open = document.querySelector(".form-container");
+var toggler = document.querySelector(".hotels-search-toggler");
+var formContainer = document.querySelector(".form-container");
 
-  button.addEventListener("click", function (evt) {
+  toggler.addEventListener("click", function (evt) {
     evt.preventDefault();
-    open.classList.toggle("form-container-hidden");
+    formContainer.classList.toggle("form-container-hidden");
   });
-  
