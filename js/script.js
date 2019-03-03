@@ -5,3 +5,7 @@ var formContainer = document.querySelector(".form-container");
     evt.preventDefault();
     formContainer.classList.toggle("form-container-hidden");
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+     formContainer.classList.add("form-container-hidden");
+  }, false);
