@@ -78,8 +78,10 @@
     			<div class="filter-price">
     				<p class="filter-title">Стоимость в сутки (Р):</p>
     				<div class="filter-price-range">
-    					<span class="price-value-min">ОТ 0</span>
-    					<span class="price-value-max">ДО 3000</span>
+              <label class="label-price-min" for="price-min">От</label>
+    					<input class="price-value-min" id="price-min" name="price-min" type="text" value="0" readonly>
+              <label class="label-price-max" for="price-max">До</label>
+    					<input class="price-value-max" id="price-max" name="price-max" type="text" value="3000" readonly>
     				</div>
     				<div class="slider-range">
     					<div class="diapason"></div>
@@ -99,12 +101,12 @@
     				<a class="option" href="#">По рейтингу</a>
     			</div>
     			<div class="sorting-icons">
-    				<a class="icon-up" href="#">
+    				<a class="icon-up" href="#" aria-label="По убыванию">
     					<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
     						<path d="M5.5 0L0 10h11z"/>
     					</svg>
     				</a>
-    				<a class="icon-down icon-active">
+    				<a class="icon-down icon-active" aria-label="По возрастанию">
     					<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
     						<path d="M5.5 10L0 0h11"/>
     					</svg>
