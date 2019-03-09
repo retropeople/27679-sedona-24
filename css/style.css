@@ -155,7 +155,7 @@ a {
 
 .description-text {
 	width: 400px;
-	padding: 47px 30px;
+	padding: 47px;
 	background-color: rgb(129, 179, 210);
 	color: rgb(255, 255, 255);
 }
@@ -516,6 +516,25 @@ a {
 	width: 100%;
 }
 
+@-webkit-keyframes shake {
+  0%, 100%                  {-webkit-transform: translateX(0);transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90%   {-webkit-transform: translateX(-5px);transform: translateX(-5px);}
+  20%, 40%, 60%, 80%        {-webkit-transform: translateX(5px);transform: translateX(5px);}
+}
+
+@keyframes shake {
+  0%, 100%                  {-webkit-transform: translateX(0);transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90%   {-webkit-transform: translateX(-5px);transform: translateX(-5px);}
+  20%, 40%, 60%, 80%        {-webkit-transform: translateX(5px);transform: translateX(5px);}
+}
+
+.form-error {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 /* Подвал */
 
 .main-footer {
@@ -711,6 +730,16 @@ a {
 
 .check-input:checked:disabled + .check-box {
 	background-image: url(../img/checkbox-on-disabled.svg);
+}
+
+.check-input:focus + .check-box::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 2px;
+  background-color: white;
+  top: 26px;
+  opacity: 0.5;
 }
 
 .filter-price {
