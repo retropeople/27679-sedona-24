@@ -130,6 +130,8 @@ a {
 .welcome .text-block {
 	padding-top: 61px;
 	padding-bottom: 50px;
+  padding-left: 355px;
+  padding-right: 356px;
 	background-color: rgb(255, 255, 255);
 }
 
@@ -174,6 +176,9 @@ a {
 	font-size: 21px;
 	font-weight: 700;
 	margin-bottom: 26px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .description-city-img {
@@ -279,6 +284,9 @@ a {
 	font-weight: 700;
 	margin: 0;
 	margin-bottom: 24px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feature-item p {
